@@ -26,6 +26,9 @@ setup(
     ],
     eager_resources=['*'],
     include_package_data=True,
+    package_data={
+        "mimicgen": ["models/robosuite/assets/**/*"],
+    },
     python_requires='>=3',
     description="MimicGen: A Data Generation System for Scalable Robot Learning using Human Demonstrations",
     author="Ajay Mandlekar",
